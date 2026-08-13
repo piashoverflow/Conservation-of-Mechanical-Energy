@@ -1,0 +1,6 @@
+{
+  "name": "Conservation of Mechanical Energy Physics Simulator",
+  "description": "Interactive physics simulation demonstrating the Law of Conservation of Mechanical Energy across Free Fall, Upward Throw, and Projectile Motion with real-time kinematic calculations, trajectory canvas, vector arrows, and energy breakdown analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
