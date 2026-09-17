@@ -8,6 +8,7 @@ import { KeyPointsTable } from './components/KeyPointsTable';
 import { ExplanationModal } from './components/ExplanationModal';
 import { PositionInspector } from './components/PositionInspector';
 import { GravitySelector } from './components/GravitySelector';
+import { ScenarioModules } from './components/ScenarioModules';
 import { PhysicsParams, PresetScenario, ViewOptions } from './types';
 import {
   calculateFlightTime,
@@ -162,8 +163,6 @@ export default function App() {
     <div className="min-h-screen bg-slate-100 text-slate-900 font-sans antialiased flex flex-col selection:bg-emerald-600 selection:text-white">
       {/* Header */}
       <Header
-        activePreset={activePreset}
-        onSelectPreset={handleSelectPreset}
         speedMultiplier={speedMultiplier}
         onChangeSpeed={(s) => setSpeedMultiplier(s)}
         onOpenHelp={() => setIsHelpOpen(true)}
@@ -176,8 +175,16 @@ export default function App() {
       <main className="flex-1 max-w-[1920px] w-full mx-auto p-3 sm:p-5 lg:p-6 space-y-6">
         {/* Main 3-Column Responsive Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 gap-5 lg:gap-6 items-start">
-          {/* Left Column Sidebar: Controls Panel (3 Cols on XL, 4 Cols on LG) */}
-          <div className="lg:col-span-4 xl:col-span-3 space-y-6">
+          {/* Left Column Sidebar: Scenario Modules & Controls Panel */}
+          <div className="lg:col-span-4 xl:col-span-3 space-y-4">
+            {/* Trajectory Modules (Before Simulation Controls) */}
+            <ScenarioModules
+              activePreset={activePreset}
+              onSelectPreset={handleSelectPreset}
+              lang={lang}
+            />
+
+            {/* Simulation Controls Panel */}
             <ControlsPanel
               params={params}
               onChangeParams={handleParamsChange}

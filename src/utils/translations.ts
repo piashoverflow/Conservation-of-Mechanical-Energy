@@ -16,6 +16,13 @@ export const translations = {
     langToggle: "বাংলা",
     langToggleTitle: "বাংলা সংস্করণে পরিবর্তন করুন",
 
+    // Scenario Modules (Left Sidebar)
+    modulesTitle: "Trajectory Modules",
+    modulesSubtitle: "Select preset scenario before adjusting controls",
+    moduleFreeFallSub: "Drop from height (v₀=0, θ=0°)",
+    moduleUpwardThrowSub: "Vertical throw (θ=90°, v₀=20m/s)",
+    moduleProjectileSub: "Angled parabolic flight (θ=45°, v₀=20m/s)",
+
     // Controls Panel
     simControls: "Simulation Controls",
     presetScenarios: "Preset Scenarios",
@@ -115,6 +122,13 @@ export const translations = {
     udvashSub: "একাডেমিক",
     langToggle: "English",
     langToggleTitle: "Switch to English version",
+
+    // Scenario Modules (Left Sidebar)
+    modulesTitle: "মডিউল / দৃশ্যপট নির্বাচন",
+    modulesSubtitle: "সিমুলেশন নিয়ন্ত্রণের আগে গতিপথের দৃশ্যপট বেছে নিন",
+    moduleFreeFallSub: "উচ্চতা থেকে পতন (v₀=০, θ=০°)",
+    moduleUpwardThrowSub: "খাড়া নিক্ষেপ (θ=৯০°, v₀=২০m/s)",
+    moduleProjectileSub: "কৌণিক প্রাস গতি (θ=৪৫°, v₀=২০m/s)",
 
     // Controls Panel
     simControls: "সিমুলেশন নিয়ন্ত্রণ",
